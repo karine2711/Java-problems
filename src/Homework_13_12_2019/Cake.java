@@ -1,19 +1,37 @@
 package Homework_13_12_2019;
 
 public class Cake {
+    public Cake(String name, String[] ingredients, String brand, String form, String color, String event,
+                Human baker, int length, int numberOfFloors, double price, int numberOfGuests,
+                double ccalPerPiece, boolean isDesignedForChildren) {
+        this.name = name;
+        this.ingredients = ingredients;
+        this.brand = brand;
+        this.form = form;
+        this.color = color;
+        this.event = event;
+        this.baker = baker;
+        this.length = length;
+        this.numberOfFloors = numberOfFloors;
+        this.price = price;
+        this.numberOfGuests = numberOfGuests;
+        this.ccalPerPiece = ccalPerPiece;
+        this.isDesignedForChildren = isDesignedForChildren;
+    }
+
     private String name;
     private String[] ingredients;
     private String brand;
-    private String form;
+    private String form="circle";
     private String color;
-    private String event;
+    private String event="none";
     private Human baker;
     private int length;
-    private int numberOfFloors;
+    private int numberOfFloors=1;
     private double price;
-    private int numberOfGuests;
-    private double ccalPerPiece;
-    private boolean isDesignedForChildren;
+    private int numberOfGuests=5;
+    private double ccalPerPiece=500;
+    private boolean isDesignedForChildren=false;
 
     public boolean isDesignedForChildren() {
         return isDesignedForChildren;
