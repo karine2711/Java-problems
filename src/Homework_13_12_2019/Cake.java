@@ -137,5 +137,14 @@ public class Cake {
             if(element.event.equals(newevent))
                 return element;
     }
-
+    public Cake filterByEvent(String newevent, Cake[] cakes){
+        for(Cake element:cakes)
+            if(element.event.equals(newevent))
+                return element;
+    }
+    public void printCakesDesignedForChildren(Cake[] cakes){
+        for(Cake element:cakes)
+            if(element.isDesignedForChildren)
+                print(element);
+    }
 }
