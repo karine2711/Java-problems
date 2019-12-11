@@ -141,5 +141,10 @@ public class Cake {
             if(element.isDesignedForChildren)
                 print(element);
     }
+    public void filterByNumberOfGuestsInRange(int a, int b, Cake[] cakes){
+        for(Cake element:cakes)
+            if(element.numberOfGuests>=a && element.numberOfGuests<=b)
+                print(element);
+    }
 
 }
