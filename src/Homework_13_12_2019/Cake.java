@@ -114,6 +114,12 @@ public class Cake {
     public double getCcalPerPiece() {
         return ccalPerPiece;
     }
+    public void setCcalPerPiece(double ccalPerPiece) {
+        this.ccalPerPiece = ccalPerPiece;
+    }
+    public  void print(Cake cake){
+        System.out.println(cake.name + " from brand "+cake.brand+" baked by "+cake.baker.firstname);
+    }
 
 
 }
