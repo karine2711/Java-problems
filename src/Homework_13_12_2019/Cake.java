@@ -120,6 +120,10 @@ public class Cake {
     public  void print(Cake cake){
         System.out.println(cake.name + " from brand "+cake.brand+" baked by "+cake.baker.firstname);
     }
+    public void print(Cake[] cakes){
+        for(Cake element:cakes)
+            System.out.print(print(element););
+    }
     public void sortAscendPrice(Cake[] cakes) {
         for (int i = cakes.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
