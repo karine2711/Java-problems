@@ -1,4 +1,4 @@
-package Problem1;
+package problems04_12_2019.Problem1;
 
 public class Filled {
     public void printSectionA(int n) {

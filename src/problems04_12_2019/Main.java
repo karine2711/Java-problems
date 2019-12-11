@@ -1,7 +1,8 @@
-import Problem1.Empty;
-import Problem1.Filled;
-import problem2.UpperToggle;
-import problem3.Animate;
+package problems04_12_2019;
+
+import problems04_12_2019.Problem1.*;
+import problems04_12_2019.problem2.*;
+import problems04_12_2019.problem3.*;
 
 public class Main {
     public static void main(String[] args) {

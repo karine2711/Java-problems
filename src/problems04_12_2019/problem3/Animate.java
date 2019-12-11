@@ -1,6 +1,4 @@
-package problem3;
-
-import java.lang.reflect.Array;
+package problems04_12_2019.problem3;
 
 public class Animate {
     public String[] a = {"|", "/", "|", "\\",};

@@ -1,4 +1,4 @@
-package problem2;
+package problems04_12_2019.problem2;
 
 public class UpperToggle {
     public String newtext;
