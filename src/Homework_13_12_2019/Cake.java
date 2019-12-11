@@ -1,17 +1,17 @@
 package Homework_13_12_2019;
 
 public class Cake {
+    public Cake() {
+    }
+
     public Cake(String name, String[] ingredients, String brand, String form, String color, String event,
                 Human baker, int length, int numberOfFloors, double price, int numberOfGuests,
                 double ccalPerPiece, boolean isDesignedForChildren) {
         this.name = name;
-        this.ingredients = ingredients;
         this.brand = brand;
-        this.form = form;
         this.color = color;
         this.event = event;
         this.baker = baker;
-        this.length = length;
         this.numberOfFloors = numberOfFloors;
         this.price = price;
         this.numberOfGuests = numberOfGuests;
@@ -20,18 +20,15 @@ public class Cake {
     }
 
     private String name;
-    private String[] ingredients;
     private String brand;
-    private String form="circle";
     private String color;
-    private String event="none";
+    private String event = "none";
     private Human baker;
-    private int length;
-    private int numberOfFloors=1;
+    private int numberOfFloors = 1;
     private double price;
-    private int numberOfGuests=5;
-    private double ccalPerPiece=500;
-    private boolean isDesignedForChildren=false;
+    private int numberOfGuests = 5;
+    private double ccalPerPiece = 500;
+    private boolean isDesignedForChildren = false;
 
     public boolean isDesignedForChildren() {
         return isDesignedForChildren;
@@ -49,13 +46,6 @@ public class Cake {
         this.name = name;
     }
 
-    public String[] getIngredients() {
-        return ingredients;
-    }
-
-    public void setIngredients(String[] ingredients) {
-        this.ingredients = ingredients;
-    }
 
     public String getBrand() {
         return brand;
@@ -65,13 +55,6 @@ public class Cake {
         this.brand = brand;
     }
 
-    public String getForm() {
-        return form;
-    }
-
-    public void setForm(String form) {
-        this.form = form;
-    }
 
     public String getColor() {
         return color;
@@ -97,13 +80,7 @@ public class Cake {
         this.baker = baker;
     }
 
-    public int getLength() {
-        return length;
-    }
 
-    public void setLength(int length) {
-        this.length = length;
-    }
 
     public int getNumberOfFloors() {
         return numberOfFloors;
@@ -132,41 +109,80 @@ public class Cake {
     public double getCcalPerPiece() {
         return ccalPerPiece;
     }
+
     public void setCcalPerPiece(double ccalPerPiece) {
         this.ccalPerPiece = ccalPerPiece;
     }
-    public  void print(Cake cake){
-        System.out.println(cake.name + " from brand "+cake.brand+" baked by "+cake.baker.firstname);
+
+
+    //Methods
+    public static void print(Cake cake) {
+        System.out.println(cake.name + " from brand " + cake.brand + " baked by " + cake.baker.firstname + " price: " + cake.price);
     }
-    public void print(Cake[] cakes){
-        for(Cake element:cakes)
-            System.out.print(print(element););
+
+    public static void print(Cake[] cakes) {
+        for (Cake element : cakes)
+            print(element);
     }
-    public void sortAscendPrice(Cake[] cakes) {
+
+    public static void sortAscendPrice(Cake[] cakes) {
+        System.out.println("-----------------------------");
+        System.out.println("Sorted by price");
         for (int i = cakes.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
-                if (cakes[i].price > cakes[i + 1].price) {
-                    Cake temp = cakes[i];
-                    cakes[i] = cakes[i + 1];
-                    cakes[i + 1] = temp;
+                if (cakes[j].price > cakes[j + 1].price) {
+                    Cake temp = cakes[j];
+                    cakes[j] = cakes[j + 1];
+                    cakes[j + 1] = temp;
                 }
             }
         }
     }
-    public void filterByEvent(String newevent, Cake[] cakes){
-        for(Cake element:cakes)
-            if(element.event.equals(newevent))
+
+    public static void filterByEvent(String newevent, Cake[] cakes) {
+        System.out.println("-----------------------------");
+        System.out.println("Filtered by event" + newevent);
+        for (Cake element : cakes)
+            if (element.event.equals(newevent))
                 print(element);
     }
-    public void printCakesDesignedForChildren(Cake[] cakes){
-        for(Cake element:cakes)
-            if(element.isDesignedForChildren)
+
+    public static void printCakesDesignedForChildren(Cake[] cakes) {
+        System.out.println("These cakes are designed for children's events");
+        for (Cake element : cakes)
+            if (element.isDesignedForChildren)
                 print(element);
     }
-    public void filterByNumberOfGuestsInRange(int a, int b, Cake[] cakes){
-        for(Cake element:cakes)
-            if(element.numberOfGuests>=a && element.numberOfGuests<=b)
+
+    public static void filterByNumberOfGuestsInRange(int a, int b, Cake[] cakes) {
+        System.out.println("-----------------------------");
+        System.out.println("Here are some guests that will be enough for " + a + " to " + b + " people");
+        for (Cake element : cakes)
+            if (element.numberOfGuests >= a && element.numberOfGuests <= b)
                 print(element);
+    }
+
+    public static void sortDescendByBakersRating(Cake[] cakes) {
+        System.out.println("-----------------------------");
+        System.out.println("Sorted by bakers' rating");
+        for (int i = cakes.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (cakes[j].baker.rating< cakes[j + 1].baker.rating) {
+                    Cake temp = cakes[j];
+                    cakes[j] = cakes[j + 1];
+                    cakes[j + 1] = temp;
+                }
+            }
+        }
+    }
+    public void getFullInformationOfBaker(){
+        System.out.println("--------------------");
+        System.out.println("Information about the baker of "+this.name);
+        System.out.println("Firstname: "+this.baker.firstname);
+        System.out.println("Lastname: "+this.baker.lastname);
+        System.out.println("Gender: "+this.baker.gender);
+        System.out.println("Age: "+this.baker.age);
+        System.out.println("Rating: "+this.baker.rating);
     }
 
 }
