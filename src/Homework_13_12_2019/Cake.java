@@ -132,5 +132,10 @@ public class Cake {
         }
     }
 
+    public Cake filterByEvent(String newevent, Cake[] cakes){
+        for(Cake element:cakes)
+            if(element.event.equals(newevent))
+                return element;
+    }
 
 }
