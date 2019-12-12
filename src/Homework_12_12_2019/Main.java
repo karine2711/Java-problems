@@ -113,7 +113,12 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         }
         System.out.println(q);
 
-
+//Section 2
+        FunctionManager object=new FunctionManager();
+        separateSections("1. parameter stanal 2 int veradarcnel dranc gumary");
+        System.out.println(object.sumOfIntegers(2,3));
+        separateSections("2. parameter stanal 2 double veradarcnel dranc artadryaly");
+        System.out.println(object.productOfDoubles(2.5,2));
 
     }
     public static void separateSections(String title){
