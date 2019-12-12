@@ -20,6 +20,7 @@ Create FunctionManager classAnd implement the following Functions.
 2. parameter stanal 2 double veradarcnel dranc artadryaly
 3. parameter stanal 2 float tpel "Yes" ete arajiny mec e 2rdic ev "No" hakarak depkum4. parameter stanal 3 hat long u tpel dranicic amenamecy
 5. parameter stanal Human tipi obecjt u tpel "Yes" ete txa e ev "No" hakarak depkum
+
 6. parametet stanal 3 hat Human object u veradarcnel amenameci azganuny
 7. parameter stanal 2 hat Human object u tpel dranc anunnery irar koxk
 8. parameter stanal mi hat boolean popoxakan ev mi hat Human, tpel human i anuny ete boolean popoxakany true e, isk ete false e tpel azganuny
