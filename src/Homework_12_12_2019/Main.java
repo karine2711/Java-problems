@@ -114,6 +114,8 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         System.out.println(q);
 
 //Section 2
+        System.out.println("_________________________________________________");
+        separateSections("Section 2");
         FunctionManager object=new FunctionManager();
         separateSections("1. parameter stanal 2 int veradarcnel dranc gumary");
         System.out.println(object.sumOfIntegers(2,3));
