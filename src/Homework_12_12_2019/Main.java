@@ -100,7 +100,18 @@ public class Main {
         else
             System.out.println(false);
 
-
+//        12. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել 2-ի աստիճան հանդիսացող էլեմենտների քանակը։
+separateSections("12. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել 2-ի աստիճան հանդիսացող էլեմենտների քանակը։");
+        int[] arr1={3,24,1,16,20,53,32,64,128};
+        int q=0;
+        for(int element:arr1){
+            int a=2;
+            while(a<element)
+                a*=2;
+            if(a==element)
+                q++;
+        }
+        System.out.println(q);
 
 
 
