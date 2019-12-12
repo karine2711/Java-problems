@@ -27,12 +27,22 @@ public class Main {
         System.out.println();
         System.out.println("--------------------------------------------------------------");
         System.out.println(" 4. Հայտարարել byte-երի զանգված եւ լցնել [-30;30] միջակայքի զույգ թվերով։");
-        int j = 0;
+        int counter = 0;
         byte[] bytearray = new byte[30];
         for (int i = -30; i <= 30; i += 2)
             if (i != 0)
-                bytearray[j++] = (byte) i;
+                bytearray[counter++] = (byte) i;
         for (byte number : bytearray)
+            System.out.print(number + " ");
+//      5.Հայտարարել short-երի զանգված եւ լցնել [1;300] միջակայքի կենտ թվերով։
+        System.out.println();
+        System.out.println("--------------------------------------------------------------");
+        System.out.println("5.Հայտարարել short-երի զանգված եւ լցնել [1;300] միջակայքի կենտ թվերով։");
+        short[] shortarray=new short[150];
+        counter=0;
+        for (int i = 1; i <= 300; i += 2)
+              shortarray[counter++] = (short) i;
+        for (short number : shortarray)
             System.out.print(number + " ");
 
 
