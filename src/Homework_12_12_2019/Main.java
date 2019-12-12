@@ -44,7 +44,13 @@ public class Main {
               shortarray[counter++] = (short) i;
         for (short number : shortarray)
             System.out.print(number + " ");
-
-
+//      6. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք բաժանվում են 5-ի։
+        System.out.println();
+        System.out.println("--------------------------------------------------------------");
+        System.out.println("6. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք բաժանվում են 5-ի։");
+    int[] numbers6={4,25,31,65,7,100,23};
+        for (int number : numbers6)
+            if(number%5==0)
+            System.out.print(number + " ");
     }
 }
