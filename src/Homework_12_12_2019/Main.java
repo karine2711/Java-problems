@@ -135,7 +135,9 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         Human Vahram=new Human("Vahram", "Papazyan", 'm', 1975);
         Human Lolita=new Human("Lolita", "Topchyan", 'f', 2001);
         System.out.println(object.oldestHuman(Mery,Vahram,Lolita));
-
+//7. parameter stanal 2 hat Human object u tpel dranc anunnery irar koxk
+        separateSections("7. parameter stanal 2 hat Human object u tpel dranc anunnery irar koxk");
+        object.printNamesOfHumans(Mery,Vahram);
     }
     public static void separateSections(String title){
         System.out.println("\n--------------------------------------------------------------");

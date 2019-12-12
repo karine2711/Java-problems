@@ -34,4 +34,8 @@ public class FunctionManager {
        oldest=c;
    return oldest.getLastName();
     }
+    //7. parameter stanal 2 hat Human object u tpel dranc anunnery irar koxk
+    public void printNamesOfHumans(Human a, Human b){
+        System.out.println(a.getFirstName()+"   "+b.getFirstName());
+    }
 }
