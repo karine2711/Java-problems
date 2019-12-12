@@ -141,6 +141,12 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         //8. parameter stanal mi hat boolean popoxakan ev mi hat Human, tpel human i anuny ete boolean popoxakany true e, isk ete false e tpel azganuny
         separateSections("8. parameter stanal mi hat boolean popoxakan ev mi hat Human, tpel human i anuny ete boolean popoxakany true e, isk ete false e tpel azganun");
         object.printNameOrSurname(false,Lolita);
+        //9. parameter stanal int eri zangvac, veradarcnel zangvaci maximal elementy
+        separateSections("9. parameter stanal int eri zangvac, veradarcnel zangvaci maximal elementy");
+        System.out.println(object.maxInIntArray(new int[]{4,25,846,-89,23,1,0,45}));
+        //10. parameter stanal float eri zangvac veradarcnel zangvaci minimal elementi INDEX-y
+        separateSections("10. parameter stanal float eri zangvac veradarcnel zangvaci minimal elementi INDEX-y");
+        System.out.println(object.indexOfMinInFloatArray(new float[]{47F,-45.5F, 45F, 2F}));
     }
     public static void separateSections(String title){
         System.out.println("\n--------------------------------------------------------------");

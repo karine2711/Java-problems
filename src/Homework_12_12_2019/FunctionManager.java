@@ -40,6 +40,22 @@ public class FunctionManager {
     }
     //8. parameter stanal mi hat boolean popoxakan ev mi hat Human, tpel human i anuny ete boolean popoxakany true e, isk ete false e tpel azganuny
     public  void printNameOrSurname(boolean t, Human human){
-        System.out.println(t?human.getFirstName():human.getLastName());
-    }
+        System.out.println(t?human.getFirstName():human.getLastName());}
+        //9. parameter stanal int eri zangvac, veradarcnel zangvaci maximal elementy
+        public int maxInIntArray(int[] ints){
+        int max=ints[0];
+            for(int i=1; i<ints.length; i++)
+                if(ints[i]>max)
+                    max=ints[i];
+                return max;
+        }
+        //10. parameter stanal float eri zangvac veradarcnel zangvaci minimal elementi INDEX-y
+        public int indexOfMinInFloatArray(float[] floats){
+            int min=0;
+            for(int i=1; i<floats.length; i++)
+                if(floats[i]<floats[min])
+                    min=i;
+            return min;
+        }
+
 }
