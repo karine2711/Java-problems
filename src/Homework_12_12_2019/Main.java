@@ -119,6 +119,8 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         System.out.println(object.sumOfIntegers(2,3));
         separateSections("2. parameter stanal 2 double veradarcnel dranc artadryaly");
         System.out.println(object.productOfDoubles(2.5,2));
+        separateSections("3. parameter stanal 2 float tpel \"Yes\" ete arajiny mec e 2rdic ev \"No\" hakarak depkum");
+        System.out.println(object.firstIsGreaterThanSecond(0.5F,2F));
 
     }
     public static void separateSections(String title){

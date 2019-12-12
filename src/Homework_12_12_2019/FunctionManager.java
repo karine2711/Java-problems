@@ -7,4 +7,8 @@ public class FunctionManager {
     }
 //   2. parameter stanal 2 double veradarcnel dranc artadryaly
     public double productOfDoubles(double x, double y){return x*y;}
+    //3. parameter stanal 2 float tpel "Yes" ete arajiny mec e 2rdic ev "No" hakarak depkum
+    public String firstIsGreaterThanSecond(float a, float b){
+        return a>b?"Yes":"No";
+            }
 }
