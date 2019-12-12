@@ -56,7 +56,31 @@ public class Main {
         for (float number : numbers8)
             if(number>35.56 || number<-34.655)
                 System.out.print(number + " ");
-
+//      9. Հայտարարել double-երի զանգված եւ լցնել այն։Դասավորել աճման/նվազման կարգով
+        separateSections("9. Հայտարարել double-երի զանգված եւ լցնել այն։Դասավորել աճման կարգով");
+        double[] numbers9={4.52,6.7,-5.3,2.8,-6,-2.1,0.5};
+        //Աճման
+        System.out.println("\n----Աճման կարգով-----");
+        for(int i=numbers9.length-1; i>0; i--)
+            for(int j=0; j<i; j++)
+                if(numbers9[j+1]<numbers9[j]) {
+                    double a=numbers9[j];
+                    numbers9[j]=numbers9[j+1];
+                    numbers9[j+1]=a;
+                }
+        for (double number : numbers9)
+            System.out.print(number + " ");
+        //Նվազման
+        System.out.println("\n----Նվազման կարգով-----");
+        for(int i=numbers9.length-1; i>0; i--)
+            for(int j=0; j<i; j++)
+                if(numbers9[j+1]>numbers9[j]) {
+                    double a=numbers9[j];
+                    numbers9[j]=numbers9[j+1];
+                    numbers9[j+1]=a;
+                }
+        for (double number : numbers9)
+            System.out.print(number + " ");
     }
 
 
