@@ -126,6 +126,10 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         //4. parameter stanal 3 hat long u tpel dranicic amenamecy
         separateSections("4. parameter stanal 3 hat long u tpel dranicic amenamecy");
         System.out.println(object.maxOfThreeLongs(45L,2L,-8L));
+        //5. parameter stanal Human tipi obect u tpel "Yes" ete txa e ev "No" hakarak depkum
+        separateSections("5. parameter stanal Human tipi obect u tpel \"Yes\" ete txa e ev \"No\" hakarak depkum");
+       Human Mery=new Human("Mery", "Mkrtchyan" ,'f',1998);
+        object.isMale(Mery);
 
     }
     public static void separateSections(String title){

@@ -18,4 +18,11 @@ public class FunctionManager {
     public long maxOfTwoLongs(long a, long b){
         return a>b?a:b;
     }
+ //   5. parameter stanal Human tipi obect u tpel "Yes" ete txa e ev "No" hakarak depkum
+    public void isMale(Human human){
+        if(human.getGender()=='m')
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    }
 }
