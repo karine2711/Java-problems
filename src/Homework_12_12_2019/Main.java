@@ -121,6 +121,9 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         System.out.println(object.productOfDoubles(2.5,2));
         separateSections("3. parameter stanal 2 float tpel \"Yes\" ete arajiny mec e 2rdic ev \"No\" hakarak depkum");
         System.out.println(object.firstIsGreaterThanSecond(0.5F,2F));
+        //4. parameter stanal 3 hat long u tpel dranicic amenamecy
+        separateSections("4. parameter stanal 3 hat long u tpel dranicic amenamecy");
+        System.out.println(object.maxOfThreeLongs(45L,2L,-8L));
 
     }
     public static void separateSections(String title){

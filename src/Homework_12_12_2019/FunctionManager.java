@@ -11,4 +11,11 @@ public class FunctionManager {
     public String firstIsGreaterThanSecond(float a, float b){
         return a>b?"Yes":"No";
             }
+//4. parameter stanal 3 hat long u tpel dranicic amenamecy
+    public long maxOfThreeLongs(long a,long b, long c){
+      return  maxOfTwoLongs(a,maxOfTwoLongs(b,c));
+    }
+    public long maxOfTwoLongs(long a, long b){
+        return a>b?a:b;
+    }
 }
