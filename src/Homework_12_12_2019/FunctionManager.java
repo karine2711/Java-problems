@@ -25,4 +25,13 @@ public class FunctionManager {
         else
             System.out.println("No");
     }
+    //6. parametet stanal 3 hat Human object u veradarcnel amenameci azganuny
+    public String oldestHuman(Human a, Human b, Human c){
+        Human oldest=a;
+   if(a.getYearOfBirth()>b.getYearOfBirth())
+       oldest=b;
+   if(oldest.getYearOfBirth()>c.getYearOfBirth())
+       oldest=c;
+   return oldest.getLastName();
+    }
 }

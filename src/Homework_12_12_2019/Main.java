@@ -130,6 +130,11 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         separateSections("5. parameter stanal Human tipi obect u tpel \"Yes\" ete txa e ev \"No\" hakarak depkum");
        Human Mery=new Human("Mery", "Mkrtchyan" ,'f',1998);
         object.isMale(Mery);
+        //6. parametet stanal 3 hat Human object u veradarcnel amenameci azganuny
+        separateSections("6. parametet stanal 3 hat Human object u veradarcnel amenameci azganuny");
+        Human Vahram=new Human("Vahram", "Papazyan", 'm', 1975);
+        Human Lolita=new Human("Lolita", "Topchyan", 'f', 2001);
+        System.out.println(object.oldestHuman(Mery,Vahram,Lolita));
 
     }
     public static void separateSections(String title){
