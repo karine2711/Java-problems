@@ -138,6 +138,9 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
 //7. parameter stanal 2 hat Human object u tpel dranc anunnery irar koxk
         separateSections("7. parameter stanal 2 hat Human object u tpel dranc anunnery irar koxk");
         object.printNamesOfHumans(Mery,Vahram);
+        //8. parameter stanal mi hat boolean popoxakan ev mi hat Human, tpel human i anuny ete boolean popoxakany true e, isk ete false e tpel azganuny
+        separateSections("8. parameter stanal mi hat boolean popoxakan ev mi hat Human, tpel human i anuny ete boolean popoxakany true e, isk ete false e tpel azganun");
+        object.printNameOrSurname(false,Lolita);
     }
     public static void separateSections(String title){
         System.out.println("\n--------------------------------------------------------------");

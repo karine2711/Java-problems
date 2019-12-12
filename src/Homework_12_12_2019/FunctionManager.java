@@ -38,4 +38,8 @@ public class FunctionManager {
     public void printNamesOfHumans(Human a, Human b){
         System.out.println(a.getFirstName()+"   "+b.getFirstName());
     }
+    //8. parameter stanal mi hat boolean popoxakan ev mi hat Human, tpel human i anuny ete boolean popoxakany true e, isk ete false e tpel azganuny
+    public  void printNameOrSurname(boolean t, Human human){
+        System.out.println(t?human.getFirstName():human.getLastName());
+    }
 }
