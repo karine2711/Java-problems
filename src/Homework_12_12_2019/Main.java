@@ -31,68 +31,80 @@ public class Main {
             System.out.print(number + " ");
 //      5.Հայտարարել short-երի զանգված եւ լցնել [1;300] միջակայքի կենտ թվերով։
         separateSections("5.Հայտարարել short-երի զանգված եւ լցնել [1;300] միջակայքի կենտ թվերով։");
-        short[] shortarray=new short[150];
-        counter=0;
+        short[] shortarray = new short[150];
+        counter = 0;
         for (int i = 1; i <= 300; i += 2)
-              shortarray[counter++] = (short) i;
+            shortarray[counter++] = (short) i;
         for (short number : shortarray)
             System.out.print(number + " ");
 //      6. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք բաժանվում են 5-ի։
-      separateSections(" 6. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք բաժանվում են 5-ի։");
-    int[] numbers6={4,25,31,65,7,100,23};
+        separateSections(" 6. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք բաժանվում են 5-ի։");
+        int[] numbers6 = {4, 25, 31, 65, 7, 100, 23};
         for (int number : numbers6)
-            if(number%5==0)
-            System.out.print(number + " ");
+            if (number % 5 == 0)
+                System.out.print(number + " ");
 //      7. Հայտարարել double-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 24.56-ից։
-       separateSections("7. Հայտարարել double-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 24.56-ից։");
-        double[] numbers7={4.5,-25,31.2,65.4,-7,100.01,23.3};
+        separateSections("7. Հայտարարել double-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 24.56-ից։");
+        double[] numbers7 = {4.5, -25, 31.2, 65.4, -7, 100.01, 23.3};
         for (double number : numbers7)
-            if(number>24.56)
+            if (number > 24.56)
                 System.out.print(number + " ");
 
 //      8. Հայտարարել float-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 35.56-ից կամ փոքր են -34.655-ից։
-      separateSections(" 8. Հայտարարել float-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 35.56-ից կամ փոքր են -34.655-ից։");
-        float[] numbers8={4.5F,-25F,31.2F,65.4F,-7F,-100.01F,23.3F, -45.5F, 12F, 34.1F, 85.6F};
+        separateSections(" 8. Հայտարարել float-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 35.56-ից կամ փոքր են -34.655-ից։");
+        float[] numbers8 = {4.5F, -25F, 31.2F, 65.4F, -7F, -100.01F, 23.3F, -45.5F, 12F, 34.1F, 85.6F};
         for (float number : numbers8)
-            if(number>35.56 || number<-34.655)
+            if (number > 35.56 || number < -34.655)
                 System.out.print(number + " ");
 //      9. Հայտարարել double-երի զանգված եւ լցնել այն։Դասավորել աճման/նվազման կարգով
         separateSections("9. Հայտարարել double-երի զանգված եւ լցնել այն։Դասավորել աճման կարգով");
-        double[] numbers9={4.52,6.7,-5.3,2.8,-6,-2.1,0.5};
+        double[] numbers9 = {4.52, 6.7, -5.3, 2.8, -6, -2.1, 0.5};
         //Աճման
         System.out.println("\n----Աճման կարգով-----");
-        for(int i=numbers9.length-1; i>0; i--)
-            for(int j=0; j<i; j++)
-                if(numbers9[j+1]<numbers9[j]) {
-                    double a=numbers9[j];
-                    numbers9[j]=numbers9[j+1];
-                    numbers9[j+1]=a;
+        for (int i = numbers9.length - 1; i > 0; i--)
+            for (int j = 0; j < i; j++)
+                if (numbers9[j + 1] < numbers9[j]) {
+                    double a = numbers9[j];
+                    numbers9[j] = numbers9[j + 1];
+                    numbers9[j + 1] = a;
                 }
         for (double number : numbers9)
             System.out.print(number + " ");
         //Նվազման
         System.out.println("\n----Նվազման կարգով-----");
-        for(int i=numbers9.length-1; i>0; i--)
-            for(int j=0; j<i; j++)
-                if(numbers9[j+1]>numbers9[j]) {
-                    double a=numbers9[j];
-                    numbers9[j]=numbers9[j+1];
-                    numbers9[j+1]=a;
+        for (int i = numbers9.length - 1; i > 0; i--)
+            for (int j = 0; j < i; j++)
+                if (numbers9[j + 1] > numbers9[j]) {
+                    double a = numbers9[j];
+                    numbers9[j] = numbers9[j + 1];
+                    numbers9[j + 1] = a;
                 }
         for (double number : numbers9)
             System.out.print(number + " ");
 
-//10. Հայտարարել String փոփոխական եւ տպել նրանում եղած 'a' տառերի քանակը։
+//      10. Հայտարարել String փոփոխական եւ տպել նրանում եղած 'a' տառերի քանակը։
         separateSections("10. Հայտարարել String փոփոխական եւ տպել նրանում եղած 'a' տառերի քանակը։");
-        String text="Wherever life plants you, bloom with grace";
-        int count=0;
-        for (int i = 0; i <text.length() ; i++) {
-            if(text.charAt(i)=='a')
-                count++;}
-        System.out.println("There are "+count+" 'a' characters in line '"+text+"'");
+        String text = "Wherever life plants you, bloom with grace";
+        int count = 0;
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == 'a')
+                count++;
+        }
+        System.out.println("There are " + count + " 'a' characters in line '" + text + "'");
+
+//      11. Հայտարարել String փոփոխական եւ տպել Yes եթե նրանում կա 'b' տառ եւ 'no' հակառակ դեպքում:
+        separateSections("11. Հայտարարել String փոփոխական եւ տպել Yes եթե նրանում կա 'b' տառ եւ 'no' հակառակ դեպքում:");
+        text="“Happiness is letting go of what you think your life is supposed to look like and celebrating it for everything that it is”";
+        if( text.contains("b"))
+            System.out.println(true);
+        else
+            System.out.println(false);
+
+
+
+
+
     }
-
-
     public static void separateSections(String title){
         System.out.println("\n--------------------------------------------------------------");
         System.out.println(title);
