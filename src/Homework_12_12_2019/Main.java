@@ -81,6 +81,15 @@ public class Main {
                 }
         for (double number : numbers9)
             System.out.print(number + " ");
+
+//10. Հայտարարել String փոփոխական եւ տպել նրանում եղած 'a' տառերի քանակը։
+        separateSections("10. Հայտարարել String փոփոխական եւ տպել նրանում եղած 'a' տառերի քանակը։");
+        String text="Wherever life plants you, bloom with grace";
+        int count=0;
+        for (int i = 0; i <text.length() ; i++) {
+            if(text.charAt(i)=='a')
+                count++;}
+        System.out.println("There are "+count+" 'a' characters in line '"+text+"'");
     }
 
 
