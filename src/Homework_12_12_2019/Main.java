@@ -38,7 +38,7 @@ public class Main {
         for (short number : shortarray)
             System.out.print(number + " ");
 //      6. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք բաժանվում են 5-ի։
-      separateSections(" 6. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք բաժանվում են 5-ի։")
+      separateSections(" 6. Հայտարարել int -երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք բաժանվում են 5-ի։");
     int[] numbers6={4,25,31,65,7,100,23};
         for (int number : numbers6)
             if(number%5==0)
@@ -50,7 +50,12 @@ public class Main {
             if(number>24.56)
                 System.out.print(number + " ");
 
-
+//      8. Հայտարարել float-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 35.56-ից կամ փոքր են -34.655-ից։
+      separateSections(" 8. Հայտարարել float-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 35.56-ից կամ փոքր են -34.655-ից։");
+        float[] numbers8={4.5F,-25F,31.2F,65.4F,-7F,-100.01F,23.3F, -45.5F, 12F, 34.1F, 85.6F};
+        for (float number : numbers8)
+            if(number>35.56 || number<-34.655)
+                System.out.print(number + " ");
 
     }
 
