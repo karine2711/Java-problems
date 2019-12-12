@@ -52,5 +52,13 @@ public class Main {
         for (int number : numbers6)
             if(number%5==0)
             System.out.print(number + " ");
+//      7. Հայտարարել double-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 24.56-ից։
+        System.out.println();
+        System.out.println("--------------------------------------------------------------");
+        System.out.println("7. Հայտարարել double-երի զանգված եւ լցնել այն։ Տպել այն էլեմենտները որոնք մեծ են 24.56-ից։");
+        double[] numbers7={4.5,-25,31.2,65.4,-7,100.01,23.3};
+        for (double number : numbers7)
+            if(number>24.56)
+                System.out.print(number + " ");
     }
 }
