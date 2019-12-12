@@ -147,6 +147,10 @@ separateSections("12. Հայտարարել int -երի զանգված եւ լց�
         //10. parameter stanal float eri zangvac veradarcnel zangvaci minimal elementi INDEX-y
         separateSections("10. parameter stanal float eri zangvac veradarcnel zangvaci minimal elementi INDEX-y");
         System.out.println(object.indexOfMinInFloatArray(new float[]{47F,-45.5F, 45F, 2F}));
+        //11. parameter stanal Humanneri zangvac tpel dasavorvac achman kargov yst cnndyan taretvi
+        separateSections("11. parameter stanal Humanneri zangvac tpel dasavorvac achman kargov yst cnndyan taretvi");
+      Human[]  humans={Mery, Vahram,Lolita};
+        object.sortHumansByYearOfBirthAscend(humans);
     }
     public static void separateSections(String title){
         System.out.println("\n--------------------------------------------------------------");

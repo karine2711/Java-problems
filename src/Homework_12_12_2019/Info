@@ -27,5 +27,5 @@ Create FunctionManager classAnd implement the following Functions.
 8. parameter stanal mi hat boolean popoxakan ev mi hat Human, tpel human i anuny ete boolean popoxakany true e, isk ete false e tpel azganuny
 9. parameter stanal int eri zangvac, veradarcnel zangvaci maximal elementy
 10. parameter stanal float eri zangvac veradarcnel zangvaci minimal elementi INDEX-y
-11. parameter stanal Humanneri zangvac tpel dasavorvac achman kargov yst cnndyan tretvi
+11. parameter stanal Humanneri zangvac tpel dasavorvac achman kargov yst cnndyan taretvi
 12. Sarkel arancin class vori mej lini main funkcian. very nshvac bolor functionnery ogtagorcel main i me

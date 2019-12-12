@@ -57,5 +57,18 @@ public class FunctionManager {
                     min=i;
             return min;
         }
-
+//11. parameter stanal Humanneri zangvac tpel dasavorvac achman kargov yst cnndyan taretvi
+    public void  sortHumansByYearOfBirthAscend(Human[] humans){
+    for(int i=humans.length-1; i>0; i--)
+        for (int j = 0; j <i ; j++) {
+            if(humans[j+1].getYearOfBirth()<humans[j].getYearOfBirth()){
+                Human temp=humans[j];
+            humans[j]=humans[j+1];
+            humans[j+1]=temp;
+            }
+        }
+    for(Human human:humans){
+        System.out.println(human.getFirstName()+"  "+human.getLastName()+"   "+human.getYearOfBirth());
+    }
+    }
 }
